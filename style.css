@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+.top-div,
+footer {
+  background-color: #cce5b7;
+}
+
+.slant-section {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+}
+
+.slant-section2 {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.top-div {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.top-wrapper {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: row;
+  padding: 50px;
+}
+
+img {
+  border-radius: 50%;
+  margin: 20px;
+  width: 400px;
+  margin-right: 50px;
+}
+
+.text-stuff {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  scale: 1.3;
+  text-align: left;
+  margin-left: 60px;
+}
+.contact-btn {
+  margin: 15px 0px;
+  background-color: #31cbb6;
+  color: white;
+  padding: 15px;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-btn:hover {
+  background-color: #2bb2a0;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.job,
+h3 {
+  color: #546f3e;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.bottom-div {
+  padding: 8%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bottom-left {
+  margin-right: 10%;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 15px 0px;
+}
+
+.colored {
+  border-bottom: 8px solid #31cbb6;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1em;
+  margin: 15px 0px;
+  font-weight: 400;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 15px 0px;
+}
+
+.list-item,
+.link {
+  display: block;
+  margin: 10px 0px;
+  font-size: 1.1em;
+}
+.bold {
+  font-weight: bold;
+}
+
+section {
+  margin: 30px 0px 50px;
+}
+
+.education {
+  margin: 0px 0px 20px;
+}
+
+.education + .colored {
+  display: none;
+}
+
+.edu-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.link,
+.email,
+.random-no {
+  color: #31cbb6;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 80px 0px 30px;
+  font-size: 2.3em;
+}
+
+.email,
+.random-no {
+  font-weight: bold;
+}
+
+.email {
+  font-size: 1.4em;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.random-no {
+  font-size: 1.2em;
+  margin: 5px 0px;
+}
+
+footer {
+  height: 50vh;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+svg {
+  width: 40px;
+  margin: 0px 10px;
+  fill: #2fc0ad;
+  cursor: pointer;
+}
+
+svg:hover {
+  fill: #0699a6;
+}
+
+@media screen and (max-width: 1100px) {
+  .top-div {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .top-wrapper {
+    margin: 0 0 50px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-stuff {
+    scale: 1;
+    text-align: center;
+    align-items: center;
+    margin: 0px 0px 15px;
+  }
+
+  .bottom-div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .edu-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .colored {
+    width: 30%;
+  }
+
+  .education + .colored {
+    display: block;
+  }
+
+  .contact-btn {
+    width: 62%;
+    padding: 15px 15px;
+    margin: 5px 0px;
+    text-wrap: nowrap;
+    text-align: center;
+  }
+  .top-wrapper {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  img {
+    width: 300px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
